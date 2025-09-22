@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tC4tuguuGgA=",
+  "success": true,
+  "projectFilePath": "D:\\WebProjects\\RankingApp\\RankingApp.Server\\RankingApp.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ALIEN\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "C:\\Users\\ALIEN\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\9.0.9\\microsoft.aspnetcore.spaproxy.9.0.9.nupkg.sha512",
+    "C:\\Users\\ALIEN\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

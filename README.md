@@ -1,1 +1,1 @@
-# RankingApp
+# RankingApp - ASP.NET Core / React

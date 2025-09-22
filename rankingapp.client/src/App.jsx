@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import RankItems from './components/RankItems.jsx'
 
 function App() {
     const [forecasts, setForecasts] = useState();
+    const devTest = true;
 
     useEffect(() => {
         populateWeatherData();
@@ -32,6 +34,7 @@ function App() {
         </table>;
 
     return (
+        (devTest)? <RankItems /> :
         <div>
             <h1 id="tableLabel">Weather forecast</h1>
             <p>This component demonstrates fetching data from the server.</p>

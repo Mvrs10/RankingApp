@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/RankingApp/DesignTimeBuild/.dtbcache.v2
+/.vs/RankingApp/v17/.suo
+/.vs/RankingApp/v17/DocumentLayout.backup.json
+/.vs/RankingApp/CopilotIndices/17.14.1204.46620/CodeChunks.db
+/.vs/RankingApp/CopilotIndices/17.14.1204.46620/CodeChunks.db-shm
+/.vs/RankingApp/CopilotIndices/17.14.1204.46620/CodeChunks.db-wal
+/.vs/RankingApp/CopilotIndices/17.14.1204.46620/SemanticSymbols.db
+/.vs/RankingApp/CopilotIndices/17.14.1204.46620/SemanticSymbols.db-shm
+/.vs/RankingApp/CopilotIndices/17.14.1204.46620/SemanticSymbols.db-wal

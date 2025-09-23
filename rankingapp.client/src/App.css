@@ -9,3 +9,21 @@ th, td {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.items_not_ranked {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.unranked_cell {
+    width: 100px;
+    height: 170px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.unranked_cell img {
+    width: 100%;
+    height: 100%;
+}

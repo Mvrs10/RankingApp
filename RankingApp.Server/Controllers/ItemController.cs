@@ -35,6 +35,7 @@ public class ItemController : ControllerBase
     public IActionResult Get(int itemType)
     {
         Item[] items = Items.Where(i => i.Type == itemType).ToArray();
+        System.Threading.Thread.Sleep(1000);
         return Ok(items);
     }
 }

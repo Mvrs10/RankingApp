@@ -5,6 +5,11 @@ import RankingGrid from './RankingGrid.jsx';
 const RankItems = () => {
     const [items, setItems] = useState([]);
     const dataType = 1;
+    const [reload,setReload] = useState(false);
+
+    function Reload() {
+        setReload(true);
+    }
 
     function drag(ev) {
         ev.dataTransfer.setData("text", ev.target.id);
@@ -51,28 +56,37 @@ const RankItems = () => {
                 throw new Error(response.status);
             const data = await response.json();
             setItems(data);
+            setReload(false);
         }
         catch (error) {
             console.error("Slow server startup: " + error);
         }
     }
+
     useEffect(() => {
         loadItems();
     }, []);
+
+    useEffect(() => {
+        if (reload === true) {
+            loadItems();
+        }
+    }, [reload])
 
     return (
         <main>
             <RankingGrid items={items} images={MovieImgs} drag={drag} allowDrop={allowDrop} drop={drop}/>
             <div className = "items_not_ranked">
         {            
-                (items.length > 0) ? items.map(item =>
+                (items.length > 0) ? items.map(item => (item.ranking === 0) ?
                     <div className="unranked_cell" key={item.id}>
                         <img id={`item_${item.id}`} src={MovieImgs.find(o => o.id === item.id)?.image} alt={item.title} 
                         style = {{cursor: "pointer"}} draggable = {true} onDragStart={drag}/>
                         <h3>{item.title}</h3> 
-                    </div>) : <div>Loading...</div>
+                    </div> : null) : <div>Loading...</div>
         }
             </div>
+            <button onClick={Reload} style={{"margin-top": "10px"}}>Reload</button>
         </main>
     )
 }

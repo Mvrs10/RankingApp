@@ -52,10 +52,10 @@ const RankingGrid = ({items, images}) => {
     };
 
     const createRowsForGrid = () => {
-        rankingGrid.push(<div className = "rank_row_first_tier">{firstRow}</div>)
-        rankingGrid.push(<div className = "rank_row_second_tier">{secondRow}</div>)
-        rankingGrid.push(<div className = "rank_row_third_tier">{thirdRow}</div>)
-        rankingGrid.push(<div className = "rank_row_last_tier">{lastRow}</div>)
+        rankingGrid.push(<div className = "rank_row first_tier">{firstRow}</div>)
+        rankingGrid.push(<div className = "rank_row second_tier">{secondRow}</div>)
+        rankingGrid.push(<div className = "rank_row third_tier">{thirdRow}</div>)
+        rankingGrid.push(<div className = "rank_row last_tier">{lastRow}</div>)
 
         return rankingGrid;
     };

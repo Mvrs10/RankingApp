@@ -27,3 +27,40 @@ th, td {
     width: 100%;
     height: 100%;
 }
+
+.rankings {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+
+.rank_row {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+.first_tier {
+    background-color: gold;    
+}
+
+.second_tier {
+    background-color: springgreen;
+    
+}
+
+.third_tier {
+    background-color: silver;
+    
+}
+
+.last_tier {
+    background-color: orange;
+    
+}
